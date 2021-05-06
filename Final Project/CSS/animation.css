@@ -1,0 +1,92 @@
+/* -------- ANIMATION PART IN GIFT CARDS PAGE  -----*/
+#giftone ul {
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 500%;    
+    -webkit-animation: carousel 30s infinite;
+    animation: carousel 30s infinite;
+}
+#giftone ul > li {
+    float: left;
+    width: 20%;
+}
+#giftone ul li {
+    position: relative;
+    list-style-type: none;
+}
+#giftone img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+}
+#giftone {
+    width: 460px;
+    text-decoration: none;
+}
+
+@-webkit-keyframes carousel {
+    0%		{left:0;}
+    10%		{left:0;}
+    15%		{left:-100%;}
+    20%		{left:-100%;}
+    27%		{left:-200%;}
+    35%		{left:-200%;}
+    40%		{left:-300%;}
+    47%		{left:-300%;}
+    55%		{left:-400%;}
+    60%		{left:-400%;}
+    65%		{left:-300%;}
+    70%		{left:-300%;}
+    75%		{left:-200%;}
+    85%		{left:-200%;}
+    90%		{left:-100%;}
+    95%		{left:-100%;}
+    100%	{left:0;}
+}
+@keyframes carousel {
+    0%		{left:0;}
+    10%		{left:0;}
+    15%		{left:-100%;}
+    20%		{left:-100%;}
+    27%		{left:-200%;}
+    35%		{left:-200%;}
+    40%		{left:-300%;}
+    47%		{left:-300%;}
+    55%		{left:-400%;}
+    60%		{left:-400%;}
+    65%		{left:-300%;}
+    70%		{left:-300%;}
+    75%		{left:-200%;}
+    85%		{left:-200%;}
+    90%		{left:-100%;}
+    95%		{left:-100%;}
+    100%	{left:0;}
+}
+/* ---------- ANIMATION IN ORDER NOW PAGE   ---------*/
+#review ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 500%;    
+    -webkit-animation: carousel 30s infinite;
+    animation: carousel 30s infinite;
+}
+#review ul > li {
+    float: left;
+    width: 20%;
+}
+#review ul li {
+    position: relative;
+}
+#review img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#review {
+    width: 100%;
+}
+

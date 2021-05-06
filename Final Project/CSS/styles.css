@@ -1,0 +1,1226 @@
+/* -------   BASIC STYLES -----------*/
+body   {
+    font-family:'Oswald', sans-serif; font-size: 1em; margin:0;
+}
+/* ---------  NAVIGATION ON HOME-INDEX PAGE  -------- */
+#container   {
+    width: 100%; height: 125px;background:#30353D; margin:0; font-size: 1.5rem;
+}   
+.navi {
+    width: 960px; margin: 0 auto; padding: 0 10px;
+}
+#dragon_logo  {
+    height: 125px; float: left; margin: 0;
+}
+nav  {
+    width:540px;height:100px;float:right;text-align:right;
+}
+nav ul {
+    list-style-type:none;margin-top:40px;
+}
+nav ul li {
+    display:inline;font-size:.85em;margin-right:10px;
+}
+nav ul li a  {
+    color: #48a6be;text-decoration:none;
+}
+a.now  {
+    color: rgb(238, 130, 157);
+}
+nav ul li a:hover  {
+    color: white;
+}
+/*  -----------------DROPDOWN OF NAV IN HOME PAGE   -----*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f0e4e473;
+    min-width: 85px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    font-family: 'Roboto', sans-serif;   
+    float: none;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color:#48a6be;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e412d;
+}
+
+/*  --------  MENU NAV SECTION IN MENU PAGE  --------*/
+#menu {
+    background-color:rgba(238, 229, 215, 0.829);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}   
+#top-of-menu-page {
+    width: 100%; margin:0; font-size: 1.5rem;
+}
+#menupage {
+    width: 960px; margin: 20px auto; padding: 0 10px;
+}
+#menulist #menu-nav img {
+    width: 140px;
+    height: auto;  
+}
+#menulist #menu-nav img:hover {
+    width: 155px; 
+}
+#menulist   {
+    width: 960px; height: 200px; float: right; margin: 0; display: flex;
+}
+#menulist ul {
+    display:inline; list-style-type:none;margin-top:10px;
+}
+#menulist ul li {
+    float: left;font-size:.85em;margin-right:10px; justify-content: flex-end;
+}
+#menulist ul li p  {
+    color: #48a6be;text-decoration:none; margin: 0; padding: 0; text-align: center;
+}
+#menu-content {
+    width: 960px; clear: both;
+    margin: 20px auto;
+}
+#menu-content #appetizers,
+#menu-content #noodles-soup,
+#menu-content #dim-sum,
+#menu-content #house-entrees,
+#menu-content #seafood,
+#menu-content #drinks {
+    margin: 20 auto; height: 950px;
+    margin-bottom: 50px;  
+}
+
+/* -----------  MENU CONTENT IN MENU PAGE  -----------*/
+#menu-content img {
+    width: 460px;
+    height: 240px;
+    margin:10px;
+}
+#menu-content p {
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+    padding-bottom: 25px;
+    font-size: .75em;  
+    margin-top: -5px; 
+}
+#menu-content h3 {
+    text-align:center; 
+    padding: 20px 0 10px 0;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    background-color:#48a6be2d ;
+    height: 25px;
+    margin: 0 10px 0 10px;
+}
+#appetone,
+#noodles-one,
+#dimsum-one,
+#house-one,
+#sea-one,
+#drink-one {
+    width: 480px;
+    float:left;
+    margin: 0;
+    padding: 0; 
+}
+#appettwo,
+#noodles-two,
+#dimsum-two,
+#house-two,
+#sea-two,
+#drink-two  {
+    width: 480px;
+    float: left;
+}
+/*-------- UP ARROW IN MENU PAGE  ----------*/
+#up-arrow {
+    position: fixed;
+    right:150px;
+    top: 50%;  
+    border: 2px solid;
+    border-radius:35px;
+    border-color: grey;
+    width: 75px;
+    height: 75px;
+    text-align: center; 
+    background-color: grey;
+}
+#up-arrow a {
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+}
+#up-arrow a:hover {
+    color:#48a6be;
+}
+  
+ /* --------  SLIDESHOW IN INDEX/ HOME PAGE --------*/
+.slideshow  {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.slideshow-item {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    animation: cycleimages 31s infinite;
+}
+.slideshow-item img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    animation: zoom 31s infinite;
+}
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img {
+    animation-delay: 0s;
+}
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img {
+    animation-delay: 10s;
+}
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img {
+    animation-delay: 20s;
+}
+.slideshow-item-text {
+    max-width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #48a6be !important;
+    background-color: rgba(10, 10, 10, 0.8); 
+    padding: .5rem 1.25rem;  
+} 
+.slideshow-item-text p {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+@keyframes cycleimages {
+    25%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+@keyframes zoom {
+    100%{
+        transform: scale(1.3);
+    }
+}
+
+/* ------- CLASSICS DISHES IN HOME PAGE ---------*/
+body#home {
+    background-color: rgba(224, 213, 213, 0.712);
+}
+main  {
+    width: 1024px; margin: 1px auto; font-family: 'Roboto', sans-serif; padding: 0; 
+}  
+#classicsone, #classicstwo  {
+    width: 32.8%; margin: 2px;float: left;
+}
+#classicsthree  {
+    width: 32.8%; margin: 2px;float: right;
+}
+h2 {
+    font-size: 1.8rem; font-weight: 600; color:#48a6be;text-align: center;
+}
+#classicsone p {
+    padding: 0 0 10px 0;
+    margin-top: 5px;
+}
+#classicstwo p {
+    padding: 0 0 10px 0;
+    margin-top: 5px;
+}
+#classicsthree p {
+    padding: 0 0 10px 0;
+    margin-top: 5px;
+}
+#classicsone img:hover {
+    transform: scale(1.1)
+}
+#classicstwo img:hover {
+    transform: scale(1.1)
+}
+#classicsthree img:hover {
+    transform: scale(1.1)
+}
+
+/* --------  VIEW MENU BUTTON  ------- */
+#viewbutton {
+    width: 960px; margin: 20px auto; padding: 50px 50px; text-align: center;
+}
+#viewbutton a { 
+    background-color: #30353D; color: #48a6be; padding: 30px 40px;  text-decoration:none; display:inline-block; border-radius: 15px
+}
+#viewbutton a:hover { 
+    background-color: #48a6be; color: black; padding: 30px 40px;  text-decoration:none; display:inline-block; border-radius: 15px
+}
+/* ------SHOUT OUT SLIDER IN HOME PAGE  -------*/
+article  {
+    width: 100%;
+    align-content: center;  
+}
+.mySlides {
+    display: none;
+    padding: 35px;
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
+}
+.mySlides  {
+    text-align: center;
+}
+/* -------  ORDER NOW PAGE  ---------*/
+#ordernow  {
+    background-image: url('../images/eating\ chinese\ food.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#ordermain {
+    width: 960px; box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color:rgba(161, 219, 216, 0.733);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 5px;
+}
+#ordertwo .delivery1 {
+    float: left;
+    padding-left: 10px;
+}
+#ordertwo .delivery2 {
+    float: left;
+    padding-bottom: 50px;
+}
+#ordertwo {
+    margin-top: 50px;
+}
+#ordertwo img {
+    width:90%;
+    margin-top: 50px;
+    padding:5px;
+}
+#orderone h3, p{
+    padding-left: 40px;
+}
+#ordertwo img:hover {
+    transform: scale(1.15);
+}
+
+/*  ------  REVIEW SLIDESHOW SECTION IN ORDER NOW PAGE --------*/
+ 
+.slideshow-section {
+    clear: both;
+    position: relative;
+    background-image: url('../images/redbackground.jpg');
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height:auto;
+    margin: 0;
+  }
+/* Slides */
+.mySlides-show {
+    display: none;
+    padding: 35px;
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
+}
+.mySlides-show p  {
+    text-align: center;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #48a6be;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+} 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(65, 63, 63, 0.8);
+    color: white;
+}
+/* The dot/bullet/indicator container */
+.dot-section {
+    text-align: center;
+    padding: 20px;
+    background:#48a6be;
+    margin-top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic; font-size: 1.35em; color: white;
+}
+/* Add a blue color to the author */
+.author {
+    color:#48a6be;
+}
+
+/* --------  BLUE INFO SECTION ON BOTTOM ----------*/
+.greybar {
+    width:100%;height:165px;background:#48a6be;clear:both; padding-top:15px; 
+}
+#infosection {
+    width: 960px; margin: 0 auto; 
+}
+#onebar, #twobar, #fourbar    {
+    width:320px; float: left; font-size:1rem; text-decoration: none; line-height: 1;
+}
+.greybar #infosection a {
+    font-size:1rem; font-family:'Roboto', sans-serif; font-style: bold;color:black; text-decoration: none; line-height: 1;
+}
+.greybar #infosection p {
+    font-size:1rem; font-family:'Roboto', sans-serif; font-style: bold;color:black; text-decoration: none;
+}
+.greybar #infosection a:hover {
+    color: white; text-decoration: none;
+}
+#onebar1,
+#onebar2,
+#twobar1,
+#twobar2 {
+    float: left; 
+}
+#onebar p {
+    margin: 10px;
+    padding: 0;
+    font-weight: 500;
+}
+#onebar::first-line {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+#twobar::first-line {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+#fourbar::first-line {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+#twobar p {
+    margin: 10px;
+    padding: 0;
+    font-weight: 500;
+}
+#fourbar p {
+    margin: 10px;
+    padding: 0;
+    font-weight: 500;
+}
+.buttonin { 
+    width: 260px; 
+    position: relative; 
+}  
+#fourbar input { 
+    margin: 0px; 
+    padding: 0px; 
+    width: 100%; 
+    height: 30px;
+} 
+#fourbar button { 
+    position: absolute; 
+    font-size: 1.5rem;
+    top: 0; 
+    right: 0px; 
+    z-index: 2; 
+    border: none; 
+    top: 0; 
+    height: 30px; 
+    padding:0px 15px 0 15px;
+    cursor: pointer; 
+    background-color: #30353D; 
+    transform: translateX(2px); 
+}
+.greybar #infosection #fourbar button a {
+    font-size: 1.5rem;
+    color: white !important;
+}
+.greybar #infosection #fourbar button a:hover {
+    font-size: 1.5rem;
+    color: rgb(235, 93, 116) !important;
+}
+#dragon_logo1  {
+    height: 125px; float: left; margin: 0;
+}
+#addressline {
+    width: 100%;
+    height: 140px;
+    background-color: rgba(100, 87, 87, 0.938);
+}
+#dragon_logo1  {
+    height: 125px; float: left; margin: 0;
+}
+#infosection-two {
+    width: 960px; margin: 0 auto;
+    font-size: 1.15rem;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
+.logo-grey,
+.logo-grey2,
+.logo-grey3,
+.logo-grey4 p {
+    color:white;
+    font-weight:300; 
+}
+i.fas.fa-envelope.fa-md,
+i.fas.fa-phone-alt.fa-md {
+    padding-right: 10px;
+}
+.logo-grey4 a {
+    color:white;
+}
+.logo-grey4 a:hover {
+    color: #48a6be;
+}
+
+/* ----------  FOOTER  ---------- */
+footer   {
+    width:100%;height:120px;background:#30353D;text-align:center;color:#48a6be;padding-top:50px;
+}
+.social-media  {
+    margin:0 auto;width:165px;
+}
+.social-media div  {
+    float:left;margin-right:5px;
+}
+.social-media a  {
+    display:block;width:36px;height:36px;text-indent:-9999px;
+}
+.social-media div.one  {
+    background:url('../images/social-media.png') 0 0;
+}
+.social-media div.two {
+    background:url('../images/social-media.png') -38px 0;
+}
+.social-media div.three {
+    background:url('../images/social-media.png') -76px 0;
+}
+.social-media div.four 	    {
+    background:url('../images/social-media.png') -114px 0;
+}
+.social-media div.one a:hover {
+    background-color: #48a6be4b; 
+}
+.social-media div.two a:hover {
+    background-color: #48a6be4b; 
+}
+.social-media div.three a:hover {
+    background-color: #48a6be4b; 
+}
+.social-media div.four a:hover {
+    background-color: #48a6be4b; 
+}
+
+ /* -----------  CONTACT US PAGE  ------------ */
+header h1 {
+    color:#48a6be;font-weight:400;font-size:4em;line-height:0; text-align: center;text-shadow: 2px 1px 4px white;
+}
+header #contactusbox {
+    margin-bottom: 50px;
+}
+#contactus i.fas.fa-phone-alt.fa-lg {
+    padding: 10px;
+}
+#contactus i.fas.fa-envelope.fa-lg {
+    padding: 10px;
+}
+#contactusbox {
+    width:960px; margin: 10px auto; font-family: "Roboto", sans-serif; 
+}
+#contactusbox #contactone {
+    width:460px; height: 375px;float: left; margin:10px 0 40px 0; font-size:1.25rem; background-color:rgba(209, 239, 241, 0.774); padding: 10px; line-height: 18px;padding-bottom: 20px;
+}
+#contactusbox #contacttwo {
+    width:460px; height: 375px; float: left; margin: 10px 0 10px 0; font-size:1.25rem; background-color:rgba(97, 187, 187, 0.815); padding: 10px; padding-bottom:20px;
+}
+#contactusbox #contactone p {
+    padding-left: 25px;
+    line-height: 18px;
+}
+#contactusbox #contactone h3 {
+    padding-left: 25px;
+    color:black;
+}
+#contactusbox #contacttwo h3 {
+    padding-left: 25px;
+    color: black;
+}
+#contactusbox #contacttwo p, h3 {
+    line-height: 18px;
+    padding: 5px 0 0 30px;
+}
+#contactone a {
+    color:black;
+}
+i.fas.fa-map-marker-alt {
+    color: rgb(218, 38, 38);
+}
+#contactone a:hover {
+    color:rgb(228, 54, 83);
+}
+#contactus  {
+    background-image: url('../images/shumai\ in\ steamer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#contactus #container   {
+    background: rgba(38, 39, 39, 0.801);
+}
+#contactone h3:hover {
+    font-size: 1.6rem; 
+    color:rgb(228, 54, 83) !important;
+}
+#contacttwo h3:hover { 
+    font-size: 1.6rem;
+    color:rgb(228, 54, 83) !important;
+}
+/* ----------   WRITE A REVIEW PAGE  ---------- */
+#reviewbox h2 {
+    color:#48a6be;font-weight:400;font-size:4em;line-height:0; text-align: center;
+}
+#reviewbox {
+    width:960px; margin: 1px auto; font-family: "Roboto", sans-serif; font-size: 1.25rem;
+}
+#reviewbox #content form {
+    margin: 35px 150px ;
+}
+#content    {
+    width:960px;margin:20px auto;background-color:rgb(226, 220, 211);
+}
+#content h1 {
+    color:#666;font-size:2em;font-weight:400;
+}
+#writeareview {
+    background-image: url('../images/shumai in steamer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* -------   FORM IN WRITE A REVIEW PAGE   --------*/
+
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+textarea, select {
+    width:400px;height:38px;padding:6px 10px;background-color:#fff;border:1px solid #D1D1D1;border-radius:4px;box-shadow:none;box-sizing:border-box;
+}
+textarea {
+    min-height:65px;padding-top:6px;padding-bottom:6px;
+}
+label	{
+    display:block;float:left;width:300px;height:30px;font-weight:600;
+}
+option {
+    font-family: "roboto", sans-serif; font-size:1rem;
+}
+input[type="checkbox"],
+input[type="radio"] 		{display:inline;}
+label > .label-body 		{display:inline-block;margin-left:.5rem;font-weight:normal;}
+input[type="email"]:required 
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid  {border-color:green;}
+hr 	{
+    margin-top:1em;margin-bottom:1em;border-width:0;border-top: 1px solid #48a6be;
+}
+input[type="submit"]:required, 
+input[type="submit"] {font-weight:400; background-color: #30353D; margin-bottom: 2em;}
+
+input[type="submit"]:hover {color: pink;border-color: #888;outline:0 !important}
+label#last {
+    width:450px;
+}
+/* --------- NEWSLETTER PAGE  --------*/
+#newsletter-page {
+    background-image: linear-gradient(125deg,#6a89cc,#b8e994);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#newsletter-page h3 {
+    margin-left: 0;
+    padding: 0;
+} 
+#reviewbox form label {
+    text-align: right;
+} 
+#newsletter-page  {
+    text-align: center;  
+}
+#newsletter-page .greybar {
+    text-align: left;
+}
+#newsletter-page #viewbutton a:hover {
+    color: white;
+}
+
+/* ------ ABOUT US PAGE -------*/
+#ourstory {
+    width:960px; margin: 10px auto; font-family: "Roboto", sans-serif;
+}
+#aboutus #container   {
+    background: rgba(38, 39, 39, 0.801);
+}
+#ourstory #storyone {
+    width:460px; height: 375px; margin:0; font-size:1.25rem; background-color:rgba(209, 239, 241, 0.774); padding:10px;
+}
+#ourstory #storytwo {
+    width:460px; height: 375px; float: left; margin: 0;padding: 10px;
+}
+#ourstory #storytwo img {
+    width: 460px; height: 375px; padding:0; margin: 0;
+    background-size: cover;
+}
+#ourstory #storyfive img {
+    width: 460px; height: 375px; padding:0; margin: 0;
+    background-size: cover;
+}
+#ourstory #storythree {
+    width:460px; height: 375px; float: right; margin: 0; font-size:1.25rem; background-color:rgba(97, 187, 187, 0.877); padding: 10px;
+}
+#ourstory #storyfour {
+    width:460px; height: 375px; float: left; margin:0; font-size:1.25rem; background-color:rgba(209, 239, 241, 0.356); padding: 10px;
+}
+#ourstory #storyfive {
+    width:460px; height: 375px; float: right; margin: 0; padding: 10px;
+}
+#ourstory h4 p {
+    margin: 20px;
+}
+#ourstory h1 {
+    padding: 20px; color:#48a6be; text-shadow: 3px 1px 2px white;
+}
+#aboutus  {
+    background-image: url('../images/ingredients.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* -------- GIFT CARDS PAGE  ---------*/
+header #giftcard {
+    width:960px; margin: 10px auto; font-family: "Roboto", sans-serif; padding-bottom: 50px;
+}
+#giftcard #container   {
+    background: rgba(38, 39, 39, 0.801);
+}
+#giftcard #giftone {
+    width:460px; height: auto; margin:0; float: left; background-color:rgba(209, 239, 241, 0.774); padding: 0px;
+}
+#giftcard #gifttwo {
+    width:460px; height: auto; float: left; margin: 0; font-size:1.25rem; background-color:rgba(179, 231, 231, 0.863); padding: 1px;
+}
+#giftcard #giftthree {
+    width:960px; height: 50px; float: left; font-size:1.45rem; font-weight: 600; text-align: center; margin: 0 0 50px 0 ;
+}
+#giftcard h1 {
+    padding: 20px; color: #48a6be; text-shadow: 2px 1px 3px  white;
+}
+#giftthree p {
+    margin-top: 10px; padding: 40px; color: #48a6be; text-shadow: 1px 1px 4px rgba(82, 47, 37, 0.932);
+}
+#gifttwo {
+    padding-top: 30px;
+}
+#gifttwo h3  {
+    margin: 13.7px !important;
+    padding: 21.5px 0 0 0;
+}
+#gifttwo h3:first-child:hover  {
+    font-size:1.5em;
+}
+#gifttwo a:hover  {
+    color: red;
+}
+#gifttwo p  {
+    margin: 14.6px;
+}
+#giftthree p {
+    padding-top: 1px;
+    margin-top: 1px;
+}  
+body#giftcard  {
+    background-image: url('../images/ramen\ soup.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+} 
+#giftone {
+    overflow:hidden;
+}
+#viewbutton-giftcard {
+    width: 100%; height: 400px; margin: 20px auto; text-align: center;
+}
+#viewbutton-giftcard a { 
+    background-color: #30353D; color: #48a6be; padding: 30px 40px;  text-decoration:none; display:inline-block; border-radius: 15px
+}
+#viewbutton-giftcard a:hover { 
+    background-color: #48a6be; color: black; padding: 30px 40px;  text-decoration:none; display:inline-block; border-radius: 15px
+}
+
+/* -----------  ERROR PAGE   -----------*/
+#error { 
+    background-image: linear-gradient(125deg,#6a89cc,#b8e994);
+    background-size: cover;
+    background-image: no-repeat;
+    background-position: center; 
+}
+#errorpage {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; 
+}
+#errorpage h1 {
+    font-size:160px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    background: url('../images/redbackground.jpg') center no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#errorpage a {
+    text-decoration: none;
+    background:  rgb(238, 130, 157);
+    color: white;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: 0.4s;
+}
+#errorpage a:hover {
+    background: #48a6be;
+    color: black;
+}
+#errorpage h2 {
+    color:black;
+}
+
+/* -------  MEDIA QUERIES - SLIDESHOW   --------- */
+@media screen and (max-width: 1000px) {
+    .slideshow-item-text {
+        max-width: 45%;
+        padding: 1rem 2.5rem;
+    }
+    .slideshow-item-text h5 {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 960px) {
+    .slideshow-item-text {       
+        bottom: 10;
+        transform: initial;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slideshow-item-text {
+        max-width: 100%;
+        padding: 1rem;
+        top: initial;
+        bottom: 0;
+        transform: initial;
+    }
+    .slideshow-item-text h5 {
+        font-size: 1.25rem;
+    }
+    .slideshow-item-text p {
+        font-size: 1rem;
+    }
+}
+/* ---------  MEDIA QUERIES - INDEX-HOME PAGE -------*/
+/*768-960 - Tablet */
+@media screen and (max-width: 960px) {
+    #container   {
+        width: 100%; height: 175px;background:#30353D; 
+    } 
+    /* ------- Navigation and logo MQ --------*/   
+    .navi {
+        width: 100%;
+    }
+    #dragon_logo   {
+        float: none !important; margin-left: 350px;
+    }  
+    nav {
+        float: none; width: 98%; text-align: center; padding: 0;margin: -50px 0 0 0;
+    } 
+    nav ul li {
+        display:inline-block;font-size:.89em;
+    }
+    /* -------- Main Classic Dishes MQ --------*/
+    main  {
+        width:98%; margin: 1px auto; padding: 5px; 
+    } 
+    #classicsone, #classicstwo  {
+        width: 100%; margin: 2px;text-align: center;  
+    }
+    #classicsthree  {
+        width: 100%; margin: 2px; text-align: center;  
+    }  
+    #classicsone img,
+    #classicstwo img,
+    #classicsthree img {
+        width: 400px !important; height: 295px !important; 
+    }
+    #viewbutton {
+        width: 100%; margin: 0; padding: 30px 0; text-align: center;
+    }
+    /* -------- Slider for Reviews MQ -------*/
+    .reviews .slideshow-section {      
+        width: 100%; height: 100px;
+    }
+    .mySlides-show {       
+        width: 100%;
+    }
+    .reviews .mySlides {
+        width: 100%; padding: 0; margin: 0;
+    }   
+    q {
+        width: 100%; margin: 0; padding: 0; justify-content: center;
+    }
+    .author {
+        padding: 0; margin: 0;
+    }
+    #classicsone img:hover {
+        transform: scale(1.05);
+    }
+    #classicstwo img:hover {
+        transform: scale(1.05);
+    }
+    #classicsthree img:hover {
+        transform: scale(1.05);
+    } 
+    /*  -------Blue Section MQ -------*/
+  
+    #infosection {
+        width: 100%;
+    }
+    #onebar {
+        display:none;
+    }
+    #twobar {
+        width: 48%; margin: 0; padding: 0;
+    }
+    #fourbar {
+        width: 48%; margin: 0; padding: 0;
+    }
+    #twobar {
+        float: left; width: 50%; text-align: left;margin-left: 5px;
+    }
+    #twobar1, #twobar2 a {
+        text-align: center; 
+    }       
+    #fourbar {
+        float: left; text-align: left; margin-left: 5px;
+    }
+    .addressline #dragon_logo {
+        float: left; margin: 0 !important;
+    }
+    #infosection-two { 
+        font-size: 1.25rem;
+    }
+    .logo-grey2,
+    .logo-grey3,
+    .logo-grey4 {
+        width: 50%;       
+    }   
+    .logo-grey2 p {
+        margin: 0 !important; padding: 0 0 0 0 !important;
+    }
+    .logo-grey3 p {
+        margin: 0 !important; padding: 0 0 0 0 !important; justify-content: center;
+    }
+    .logo-grey4 p {
+    margin: 0 !important; padding: 0 0 0 0 !important; justify-content: center;
+    }
+}
+/*480-768 - mobile landscape*/
+@media screen and (max-width: 767px) {
+    #container   {
+        height: 170px;background:#30353D;      
+    } 
+    /* ------- Navigation and logo MQ --------*/   
+    .navi {
+        width: 100%;
+    }
+    #dragon_logo   {
+        float: none !important; margin-left: 225px;
+    }  
+    nav {
+        float: none; width: 98%; text-align: center; padding: 0;margin: -50px 0 0 0;
+    } 
+    nav ul li {
+        display:inline-block;font-size:.89em;
+    }
+    /* -------- Main Classic Dishes MQ --------*/
+    main  {
+        width:98%; margin: 1px auto; padding: 5px; 
+    } 
+    #classicsone, #classicstwo  {
+        width: 100%; margin: 2px;text-align: center;  
+    }
+    #classicsthree  {
+        width: 100%; margin: 2px; text-align: center;  
+    }  
+    #classicsone img,
+    #classicstwo img,
+    #classicsthree img {
+        width: 400px !important; height: 295px !important; 
+    }
+    #viewbutton {
+        width: 100%; margin: 0; padding: 30px 0; text-align: center;
+    }
+    /* -------- Slider for Reviews MQ -------*/
+    .reviews .slideshow-section {      
+        width: 100%; height: 100px;
+    }
+    .mySlides-show {       
+        width: 100%;
+    }
+    .reviews .mySlides {
+        width: 100%; padding: 0; margin: 0;
+    }   
+    q {
+        width: 100%; margin: 0; padding: 0; justify-content: center;
+    }
+    .author {
+        padding: 0; margin: 0;
+    }
+    #classicsone img:hover {
+        transform: scale(1.05);
+    }
+    #classicstwo img:hover {
+        transform: scale(1.05);
+    }
+    #classicsthree img:hover {
+        transform: scale(1.05);
+    } 
+    /*  -------Blue Section MQ -------*/
+  
+    #infosection {
+        width: 100%;
+    }
+    #onebar {
+        display:none;
+    }
+    #twobar {
+        width: 48%; margin: 0; padding: 0;
+    }
+    #fourbar {
+        width: 48%; margin: 0; padding: 0;
+    }
+    #twobar {
+        float: left; width: 50%; text-align: left;margin-left: 5px;
+    }
+    #twobar1, #twobar2 a {
+        text-align: center; 
+    }       
+    #fourbar {
+        float: left; text-align: left; margin-left: 5px;
+    }
+    .addressline #dragon_logo1 {
+        float: left; margin: 0 !important;
+    }
+    #infosection-two { 
+        font-size: 1.25rem;
+    }
+    .logo-grey2,
+    .logo-grey3,
+    .logo-grey4 {
+        width: 50%;       
+    }   
+    .logo-grey2 p {
+        margin: 0 !important; padding: 0 0 0 0 !important;
+    }
+    .logo-grey3 p {
+        margin: 0 !important; padding: 0 0 0 0 !important; justify-content: center;
+    }
+    .logo-grey4 p {
+    margin: 0 !important; padding: 0 0 0 0 !important; justify-content: center;
+    }
+}
+
+/* < 479 - mobile portrait*/
+@media screen and (max-width: 480px) {
+    #dragon_logo   {
+        float: none !important; margin-left: 100px;
+    } 
+    nav {
+        float: none; width: 98%; text-align: center; padding: 0;margin: -15px 0 0 0;
+    } 
+    #onebar {
+        display:none;
+    }
+    #twobar {
+        width: 100%; margin: 0; padding: 0;       
+    }
+    #fourbar {
+        width: 100%; margin: 0; padding: 0;
+    }
+    #twobar {
+        float: none; text-align: center; margin-left: 5px;
+    }
+    #twobar p {
+        text-align: center; 
+        font-size: 2.5em;
+    }
+    #twobar a {
+        text-align: center; margin-left: 70px;
+    }
+    #twobar1, #twobar2 a {
+        text-align: center; 
+    }       
+    #fourbar {
+        clear: both; text-align: center; margin-left: 5px; 
+    }    
+    .logo-grey2 {
+        float: none;
+    }
+    .buttonin {
+        width: 440px;
+    }
+    #fourbar input {
+        height: 40px;
+    }
+    #fourbar button {
+        font-size: 2rem;
+        height: 40px;
+    }
+    #fourbar a {
+        font-size: 3em;
+    }
+    .greybar {
+        width:100%;height:295px;background:#48a6be;clear:both; padding-top:15px; 
+    }
+    #addressline {
+        height: 300px;
+    }
+    #dragon_logo1 {
+        float: none; margin-left: 70px !important; 
+    }  
+    /* -------  brown area MQ  --------*/
+    #infosection-two {
+        display: block;      
+    }
+    .logo-grey2,
+    .logo-grey3,
+    .logo-grey4 {
+        width: 100%; clear: both; margin: 0; padding: 0;
+    } 
+    .logo-grey2 {
+    margin-left: 80px;
+    }
+    .logo-grey3 {
+        margin-left: 80px;
+    }
+    .logo-grey4 {
+        margin-left: 80px;
+    }  
+    .logo-grey2
+    .logo-grey3,
+    .logo-grey4 p {
+        margin-left: 50px;  
+    }
+    
+    /* ---------J Query for Drop Down Menu ------------*/   
+    select {
+        background-color: rgb(45, 172, 189);
+        font-size: 1em;
+        height: 43px;
+        font-family: "roboto", sans-serif;
+        color: white;
+    }
+}
+    
+@media print {
+    #navi { 
+        display: none; 
+    } 
+    .slideshow,
+    #viewbutton {
+        display: none;
+    }  
+    body, 
+    main,
+    .greybar,
+    footer { 
+        width: auto; 
+        border: 0; 
+        margin: 0 5%; 
+        padding: 0; 
+        float: none !important; 
+        background: transparent;
+        background-color: white;
+    }
+}

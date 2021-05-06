@@ -1,0 +1,19 @@
+#navi { 
+    display: none; 
+} 
+.slideshow,
+#viewbutton {
+    display: none;
+}  
+body, 
+main,
+.greybar,
+footer { 
+    width: auto; 
+    border: 0; 
+    margin: 0 5%; 
+    padding: 0; 
+    float: none !important; 
+    background: transparent;
+    background-color: white;
+}

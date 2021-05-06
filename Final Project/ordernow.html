@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+    <link href="css/animation.css" rel="stylesheet">
+    <link href="fontawesome-free-5.15.1-web/css/all.min.css" rel="stylesheet">
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#responsive-menu').mobileMenu({prependTo:'nav'});
+        });
+    </script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides-show");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</head>
+<body id="ordernow">
+    <div id="container">
+        <div class="navi">
+        <!-- <figure>logo</figure> -->
+        <a href="index.html"><img src="images/water-dragon-chinese_NEW.png" id="dragon_logo" alt="logo"></a>
+        <nav>
+            <ul id="responsive-menu">
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><a href="giftcard.html">GIFT CARDS</a></li>
+                <li><a href="ordernow.html" class="now">ORDER NOW</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    <main id="ordermain">
+        <div id="orderone">
+            <h3>Take Out</h3>
+            <p>Give us a call to save time and we will get your next meal ready for you. </p>
+            <p>Got Questions? Call: (888) 123-8888</p>
+            <h3>Catering</h3>
+            <p>All you need to do is call us and we will plan your next event. Blue Dragon can cater your event of any size.</p>
+            <p>Call to plan your event at: (888) 123-8880</p>
+            <h3>Delivery Options</h3>
+            <p>Choose your delivery option and get your delicious meal without leaving your home with DoorDash or GrubHub.</p>
+            
+        </div>
+        <div id="ordertwo">
+            <div class="delivery1">
+                <a href="" ><img src="images/drdash1.png" alt="DoorDash"style="100%"></a>
+            </div>
+            <div class="delivery2">
+                <a href="" ><img src="images/grubhub.1.jpg" alt="GrubHub"style="100%"></a>
+            </div>
+        </div>
+</main>
+    <!------    REVIEWS SECTIOM -------->
+    
+   
+    <section class="reviews">
+    <div class="slideshow-section">
+        <div class="mySlides-show">
+            <q>Chef Shou perfectly cooks each plate to perfection. The "wok-hei" flavors is out of this world.</q>
+            <p class="author">- SAN DIEGO CHANNEL 8 UNKNOWN EATER</p>
+        </div>
+        
+        <div class="mySlides-show">
+            <q>The food itself is delightful. A special sea bass is heavy with fragant mushrooms and black beans with lashings of garlic has that pleasing nose-tickle effect.</q>
+            <p class="author">- SAN DIEGO UNION TRIBUNE</p>
+        </div>
+        
+        <div class="mySlides-show">
+            <q>This place offers authentic flavors from Suzhou. It reminds me of my mother's savory comfort dishes.</q>
+            <p class="author">- Nathandro Lee, Regular customer</p>
+        </div>          
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>       
+    </div>
+        
+        <div class="dot-section">
+          
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </section> 
+       
+   
+      
+        
+            <!-- MENU BUTTON
+            <div id="viewbutton">
+                <a href="menu.html" >VIEW FULL MENU</a>
+            </div>
+        </div> -->
+        <!-- BLUE GREYBAR SECTION -->
+        <section class="greybar">
+            <!-- 1st COLUMN OF BLUE SECTION ----->     
+                <div id="infosection">
+                    <div id="onebar">
+                        <p>What We Offer</p><br>
+                        <div id="onebar1">
+                            <p><a href="menu.html#appetizers">Appetizers</a></p>
+                            <p><a href="menu.html#noodles-soup">Noodle Soups</a></p>
+                            <p><a href="menu.html#dim-sum">Dim Sum</a></p>
+                        </div>  
+                        <div id="onebar2">
+                            <p><a href="menu.html#house-entrees">Suzhou Entrees</a></p>
+                            <p><a href="menu.html#seafood">Seafood</a></p>
+                            <p><a href="menu.html#drinks">Drinks</a></p>
+                        </div>   
+                    </div>
+        
+            <!-- 2ND COLUMN OF BLUE SECTION -----> 
+                    <div id="twobar">  
+                        <p>Information</p><br>
+                        <div id="twobar1">
+                            <p><a href="aboutus.html">About Us</a></p>
+                            <p><a href="menu.html">Our Menu</a></p>
+                        </div>
+                        <div id="twobar2">
+                            <p><a href="contactus.html">Contact Us</a></p>
+                            <p><a href="writereview.html">Write A Review</a></p>
+                        </div>
+                    </div>
+        
+            <!-- 3RD COLUMN OF BLUE SECTION ----->      
+                    <div id="fourbar">
+                        <p>Newsletter</p><br>
+                        <p>Sign up for offers and giveaways</p>
+                        <div class="buttonin"> 
+                            <input type="text" id="enter" placeholder="  Your email here"> 
+                            <button id="clear"><a href="newsletter.html">JOIN</a></button> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="addressline">
+                <div id="infosection-two">
+                    <div class="logo-grey">
+                        <!-- <figure>logo</figure> -->
+                        <a href="index.html"><img src="images/water-dragon-chinese_NEW.png" id="dragon_logo1" alt="bluedragonlogo">
+                        </a>
+                    </div>
+                    <div class="logo-grey2">
+                        <p>12384 Fenton Pkwy, San Diego, CA 92111</p>
+                    </div>
+                    <div class="logo-grey3">
+                        <p> <i class="fas fa-phone-alt fa-md"></i>Phone: (888) 123-8888</p>
+                    </div>
+                    <div class="logo-grey4">
+                        <p><i class="fas fa-envelope fa-md"></i><a href="mailto:sabrinapea@yahoo.com?subject="Hello Blue Dragon">info@bluedragon.org</a></p>
+                    </div>              
+                </div>        
+            </div>
+
+		<footer>
+			&copy; 2021 Blue Dragon Bistro - All Rights Reserved<br><br>
+            <div class="social-media">
+                <div class="one"><a href="http://www.facebook.com">Dragon on Facebook</a></div>
+                <div class="two"><a href="http://www.google.com">Dragon on Google+</a></div>
+                <div class="three"><a href="http://www.rss.com">Dragon RSS Feed</a></div>
+                <div class="four"><a href="http://www.twitter.com">Dragon on Twitter</a></div>
+            </div>
+        </footer>
+          
+
+    
+</body>
+</html>

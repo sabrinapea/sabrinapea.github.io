@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+    <link href="fontawesome-free-5.15.1-web/css/all.min.css" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/4a874abbc4.js" crossorigin="anonymous"></script> -->
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#responsive-menu').mobileMenu({prependTo:'nav'});
+        });
+    </script>
+</head>
+
+<body id="writeareview">
+    <div id="container">
+        <div class="navi">
+        <!-- <figure>logo</figure> -->
+        <a href="index.html"><img src="images/water-dragon-chinese_NEW.png" id="dragon_logo" alt="logo"></a>
+        <nav>
+            <ul id="responsive-menu">
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><a href="giftcard.html">GIFT CARDS</a></li>
+                <li><a href="ordernow.html" class="now">ORDER NOW</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+
+        
+    </header>
+    <div id="reviewbox">
+        <h2>Write A Review</h2>
+        
+        <section id="content">
+       
+        <form action="" method="post">
+            <p><em>Note: Fields with asterisk are required.</em></p>
+            <label>Name:</label> <input type="text" name="name" style="height:25px; width:350px" maxlength="50" required>
+            <br><br>
+            <label>Phone Number:</label> <input type="tel" name="phonenumber" style="height:25px; width:350px"maxlength="20" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required title="Ex: 555-555-5555">
+            <br><br>
+            <label>*Email:</label> <input type="email" name="email" style="height:25px; width:350px" maxlength="30" required>
+            <hr>
+            <label style="height:100px;">How often have you visit our restaurant?</label><br>
+            <input type="checkbox" name="product" id="vprospect" value="vProspect"> 1 - 3 times this week<br>
+            <input type="checkbox" name="product" id="vconvert" value="vConvert"> 4 - 7 times in last 2 weeks<br>
+            <input type="checkbox" name="product" id="vretain" value="vRetain"> 1 - 3 times in a month
+            <br><br>
+            <label style="height:100px;">How did you order during your visit?</label><br>
+            <input type="radio" name="infrastructure" value="Mac"> In-person<br>
+            <input type="radio" name="infrastructure" value="Linux"> By Phone<br>
+            <input type="radio" name="infrastructure" value="Unix"> Online Order<br>
+            <input type="radio" name="infrastructure" value="Windows"> Delivery Service
+            
+            <hr>
+            <label>How did you hear about us?</label>
+            <select name="hearaboutus" style="height:92px; width: 250px" multiple>
+                <option value="Online Search">Online Search</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Family or Friend">Family or Friend</option>
+                <option value="Coupon or Promotion Ad">Coupon or Promotion Ad</option>
+                <option value="Was In Area">Was In Area</option>
+                <option value="Regular">Regular Customer</option>
+                <option value="Other">Other</option>
+            </select>
+            <hr>
+            <label id="last">*How was Your Blue Dragon Experience?</label> <textarea name="questions" style="height: 100px; width: 700px" ></textarea>
+            <hr><br>
+            <input type="submit" style="height: 45px; width: 200px; color:#44bebe; border-radius:15px" value="SUBMIT REVIEW" >
+        </form>
+    </section>
+    </div>
+     <!-- BLUE BOTTOM SECTION -->
+     <section class="greybar">
+        <!-- 1st COLUMN OF BLUE SECTION ----->     
+            <div id="infosection">
+                <div id="onebar">
+                    <p>What We Offer</p><br>
+                    <div id="onebar1">
+                        <p><a href="menu.html#appetizers">Appetizers</a></p>
+                        <p><a href="menu.html#noodles-soup">Noodle Soups</a></p>
+                        <p><a href="menu.html#dim-sum">Dim Sum</a></p>
+                    </div>  
+                    <div id="onebar2">
+                        <p><a href="menu.html#house-entrees">Suzhou Entrees</a></p>
+                        <p><a href="menu.html#seafood">Seafood</a></p>
+                        <p><a href="menu.html#drinks">Drinks</a></p>
+                    </div>   
+                </div>
+    
+        <!-- 2ND COLUMN OF BLUE SECTION -----> 
+                <div id="twobar">  
+                    <p>Information</p><br>
+                    <div id="twobar1">
+                        <p><a href="aboutus.html">About Us</a></p>
+                        <p><a href="menu.html">Our Menu</a></p>
+                    </div>
+                    <div id="twobar2">
+                        <p><a href="contactus.html">Contact Us</a></p>
+                        <p><a href="writereview.html">Write A Review</a></p>
+                    </div>
+                </div>
+    
+        <!-- 3RD COLUMN OF BLUE SECTION ----->      
+                <div id="fourbar">
+                    <p>Newsletter</p><br>
+                    <p>Sign up for offers and giveaways</p>
+                    <div class="buttonin"> 
+                        <input type="text" id="enter" placeholder="  Your email here"> 
+                        <button id="clear"><a href="newsletter.html">JOIN</a></button> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="addressline">
+            <div id="infosection-two">
+                <div class="logo-grey">
+                    <!-- <figure>logo</figure> -->
+                    <a href="index.html"><img src="images/water-dragon-chinese_NEW.png" id="dragon_logo1" alt="bluedragonlogo">
+                    </a>
+                </div>
+                <div class="logo-grey2">
+                    <p>12384 Fenton Pkwy, San Diego, CA 92111</p>
+                </div>
+                <div class="logo-grey3">
+                    <p> <i class="fas fa-phone-alt fa-md"></i>Phone: (888) 123-8888</p>
+                </div>
+                <div class="logo-grey4">
+                    <p><i class="fas fa-envelope fa-md"></i><a href="mailto:sabrinapea@yahoo.com?subject="Hello Blue Dragon">info@bluedragon.org</a></p>
+                </div>              
+            </div>        
+        </div>
+
+    <footer>
+        &copy; 2021 Blue Dragon Bistro - All Rights Reserved<br><br>
+        <div class="social-media">
+            <div class="one"><a href="http://www.facebook.com">Dragon on Facebook</a></div>
+            <div class="two"><a href="http://www.google.com">Dragon on Google+</a></div>
+            <div class="three"><a href="http://www.rss.com">Dragon RSS Feed</a></div>
+            <div class="four"><a href="http://www.twitter.com">Dragon on Twitter</a></div>
+        </div>
+    </footer>
+    
+</body>
+</html>

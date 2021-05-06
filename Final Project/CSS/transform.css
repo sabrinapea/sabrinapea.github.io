@@ -1,0 +1,16 @@
+/* -------- ABOUT US PAGE  --------*/
+#ourstory #storyone:hover {
+    cursor: pointer;
+	transform:scale(1.15);
+	-webkit-transform:scale(1.15);
+}
+#ourstory #storythree:hover {
+    cursor: pointer;
+	transform:scale(1.15);
+	-webkit-transform:scale(1.15);
+}
+#ourstory #storyfour:hover {
+    cursor: pointer;
+	transform:scale(1.15);
+	-webkit-transform:scale(1.15);
+}
